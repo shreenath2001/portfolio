@@ -16,6 +16,10 @@
     <body>
         
         <h1>Welcome</h1>
+        {% for contact in contacts %}
+            <h2>{{contact.name}}</h2>
+            <h2>{{contact.email}}</h2>
+        {% endfor %}
 
         <script src="" async defer></script>
     </body>

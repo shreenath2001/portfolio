@@ -17,7 +17,7 @@ import dj_database_url
 #BASE_DIR = Path(__file__).resolve().parent.parent
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-current_state = 'prod'
+current_state = 'dev'
 
 
 # Quick-start development settings - unsuitable for production
