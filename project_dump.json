@@ -1,0 +1,63 @@
+[
+{
+    "model": "jobs.contact",
+    "pk": 1,
+    "fields": {
+        "name": "Shreenath Bharadwaj",
+        "subject": "Testing",
+        "email": "bharadwajshreenath@gmail.com",
+        "message": "Writing this message for testing"
+    }
+},
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$216000$mAeZ9Dhh7gFL$z/WOjuNW1QfhPKyhne8EZf4glWqmMR4LxTiv0kcb6V0=",
+        "last_login": "2020-12-31T12:24:17.547Z",
+        "is_superuser": true,
+        "username": "shreenathbharadwaj",
+        "first_name": "",
+        "last_name": "",
+        "email": "bharadwajshreenath@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2020-12-22T10:54:19.834Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "5725d9s0h5op8bhrw1zv9kvgqaq5ijtw",
+    "fields": {
+        "session_data": ".eJxVjMEOwiAQRP-FsyG0iIBH7_0GsssuUjWQlPZk_Hdp0oNe5jDvzbxFgG3NYWu8hJnEVQzi9NshxCeXHdADyr3KWMu6zCh3RR60yakSv26H-3eQoeW-9qz9GZViq9GCc-hHmygmjkTGmAG9VT21VeBYYTKEFzc6zbGH8lp8vu3NN94:1kux05:4MMqgD9o24EvQU1CdqDv7Nklcmz1kzVA3IUyzObRE8Y",
+        "expire_date": "2021-01-14T12:24:17.550Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "eipo7gusg1qii1pqehqwiowhk8rgkq4j",
+    "fields": {
+        "session_data": ".eJxVjMEOwiAQRP-FsyG0iIBH7_0GsssuUjWQlPZk_Hdp0oNe5jDvzbxFgG3NYWu8hJnEVQzi9NshxCeXHdADyr3KWMu6zCh3RR60yakSv26H-3eQoeW-9qz9GZViq9GCc-hHmygmjkTGmAG9VT21VeBYYTKEFzc6zbGH8lp8vu3NN94:1krfJa:jTP4VD2XkcOY5wPOeKbtSJFxCyG-NqbdZyLEvHD3w4A",
+        "expire_date": "2021-01-05T10:54:50.292Z"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2020-12-31T12:28:12.213Z",
+        "user": [
+            "shreenathbharadwaj"
+        ],
+        "content_type": [
+            "jobs",
+            "contact"
+        ],
+        "object_id": "1",
+        "object_repr": "Shreenath Bharadwaj",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+}
+]
