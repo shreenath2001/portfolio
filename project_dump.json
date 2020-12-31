@@ -10,6 +10,16 @@
     }
 },
 {
+    "model": "jobs.contact",
+    "pk": 2,
+    "fields": {
+        "name": "MAHESH JHA",
+        "subject": "eecwecew",
+        "email": "eacknath22@gmail.com",
+        "message": "Writing this message for testing"
+    }
+},
+{
     "model": "auth.user",
     "fields": {
         "password": "pbkdf2_sha256$216000$mAeZ9Dhh7gFL$z/WOjuNW1QfhPKyhne8EZf4glWqmMR4LxTiv0kcb6V0=",
@@ -56,6 +66,24 @@
         ],
         "object_id": "1",
         "object_repr": "Shreenath Bharadwaj",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2020-12-31T13:08:28.807Z",
+        "user": [
+            "shreenathbharadwaj"
+        ],
+        "content_type": [
+            "jobs",
+            "contact"
+        ],
+        "object_id": "2",
+        "object_repr": "MAHESH JHA",
         "action_flag": 1,
         "change_message": "[{\"added\": {}}]"
     }
