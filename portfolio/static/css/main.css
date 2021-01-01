@@ -5,13 +5,24 @@
 }
 
 body{
-    background-color: #3d3d3d;
     color: white;
+    width: 100%;
+    background: #3d3d3d;
+}
+
+.image {
+    background-image: url("../img/background-2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 1.0;
+    height: 100vh;
+    animation: background-load 500ms ease-in;
 }
 
 .intro{
-    margin-top: 5vh;
-    margin-bottom: 5vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
 }
 
 .align-intro{
@@ -21,7 +32,12 @@ body{
 .intro-img{
     width: 250px;
     border-radius: 50%;
-    border: 1px solid gold;
+    border: 2px solid gold;
+    animation: img-load 800ms ease-in;
+}
+
+.intro-content{
+    animation: intro-content-load 1000ms ease-in;
 }
 
 .intro h1{
@@ -34,6 +50,12 @@ body{
 
 .intro p{
     font-size: 24px;
+}
+
+.intro-link a{
+    transition-property: background-color;
+    transition-duration: 1s;
+    transition-timing-function: ease;
 }
 
 .intro-link a:hover{
@@ -50,4 +72,38 @@ body{
         text-align: center;
     }
 
+    .intro-link{
+        text-align: center;
+    }
+
   }
+
+@keyframes background-load{
+    0%{
+        transform: translateY(-100%);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes img-load{
+    0%{
+        transform: translateY(500%);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
+@keyframes intro-content-load{
+    0%{
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}

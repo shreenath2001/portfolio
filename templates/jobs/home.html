@@ -23,21 +23,26 @@
         <link rel="stylesheet" href="{% static 'css/main.css' %}">
     </head>
     <body>
-        
-        <div class = "container intro">
-            {% if intro %}
-                <p class = "align-intro"><img src = "{{intro.image.url}}" alt = "Shreenath Image" class = "intro-img" /></p>
-                <h1>{{intro.first_name}} <span class = "intro-last-name">{{intro.last_name}}</span></h1>
-                <p>{{intro.about}}</p>
-                <div class = "row intro-link">
-                    <div class = "col-12">
-                        <a class="btn btn-social-icon btn-github btn-lg" target = "_blank" href="{{intro.github_link}}"><i class="fa fa-github"></i></a>
-                        <a class="btn btn-social-icon btn-linkedin btn-lg" target = "_blank" href="{{intro.linkedin_link}}"><i class="fa fa-linkedin"></i></a>
-                        <a class="btn btn-social-icon btn-twitter btn-lg" target = "_blank" href="{{intro.twitter_link}}"><i class="fa fa-twitter"></i></a>
-                        <a class="btn btn-social-icon btn-instagram btn-lg" target = "_blank" href="{{intro.instagram_link}}"><i class="fa fa-instagram"></i></a>
-                    </div>
+        <div class = "wrap">
+            <div class = "image">
+                <div class = "container intro">
+                    {% if intro %}
+                        <p class = "align-intro"><img src = "{{intro.image.url}}" alt = "Shreenath Image" class = "intro-img" /></p>
+                        <div class = "intro-content">
+                            <h1>{{intro.first_name}} <span class = "intro-last-name">{{intro.last_name}}</span></h1>
+                            <p>{{intro.about}}</p>
+                            <div class = "row intro-link">
+                                <div class = "col-12">
+                                    <a class="btn btn-social-icon btn-github btn-lg" target = "_blank" href="{{intro.github_link}}"><i class="fa fa-github"></i></a>
+                                    <a class="btn btn-social-icon btn-linkedin btn-lg" target = "_blank" href="{{intro.linkedin_link}}"><i class="fa fa-linkedin"></i></a>
+                                    <a class="btn btn-social-icon btn-twitter btn-lg" target = "_blank" href="{{intro.twitter_link}}"><i class="fa fa-twitter"></i></a>
+                                    <a class="btn btn-social-icon btn-instagram btn-lg" target = "_blank" href="{{intro.instagram_link}}"><i class="fa fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    {% endif %}
                 </div>
-            {% endif %}
+            </div>
         </div>
     
         <script src="" async defer></script>
