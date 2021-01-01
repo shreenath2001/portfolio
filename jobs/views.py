@@ -1,11 +1,11 @@
 from django.shortcuts import render
-from .models import Contact
+from .models import Intro
 
 # Create your views here.
 
 def home(request):
-    contacts = Contact.objects.all()
+    intro = Intro.objects.get(first_name = "Shreenath")
     data = {
-        'contacts':contacts,
+        'intro':intro,
     }
     return render(request, 'jobs/home.html', data)

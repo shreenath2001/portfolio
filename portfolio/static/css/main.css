@@ -5,5 +5,49 @@
 }
 
 body{
-    background-color: blue;
+    background-color: #3d3d3d;
+    color: white;
 }
+
+.intro{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.align-intro{
+    text-align: center;
+}
+
+.intro-img{
+    width: 250px;
+    border-radius: 50%;
+    border: 1px solid gold;
+}
+
+.intro h1{
+    font-size: 48px;
+}
+
+.intro-last-name{
+    color: gold;
+}
+
+.intro p{
+    font-size: 24px;
+}
+
+.intro-link a:hover{
+    background-color: rgba(255, 215, 0, 0.8);
+}
+
+
+@media screen and (max-width: 768px) {
+    .intro-img{
+        width: 65%;
+    }
+
+    .intro h1,p{
+        text-align: center;
+    }
+
+  }
