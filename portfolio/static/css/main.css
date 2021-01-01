@@ -17,7 +17,7 @@ body{
     background-size: cover;
     opacity: 1.0;
     height: 100vh;
-    animation: background-load 500ms ease-in;
+    animation: background-load 800ms ease-in;
 }
 
 .intro{
@@ -33,11 +33,11 @@ body{
     width: 250px;
     border-radius: 50%;
     border: 2px solid gold;
-    animation: img-load 800ms ease-in;
+    animation: img-load 1200ms ease-in;
 }
 
 .intro-content{
-    animation: intro-content-load 1000ms ease-in;
+    animation: intro-content-load 2000ms ease-in;
 }
 
 .intro h1{
@@ -64,12 +64,21 @@ body{
 
 
 @media screen and (max-width: 768px) {
+    .image{
+        animation: background-load 800ms ease-in;
+    }
+
     .intro-img{
         width: 65%;
+        animation: img-load 1500ms ease-in;
     }
 
     .intro h1,p{
         text-align: center;
+    }
+
+    .intro-content{
+        animation: intro-content-load 2000ms ease-in;
     }
 
     .intro-link{
@@ -90,7 +99,7 @@ body{
 
 @keyframes img-load{
     0%{
-        transform: translateY(500%);
+        transform: translateY(-200%);
     }
 
     100%{
