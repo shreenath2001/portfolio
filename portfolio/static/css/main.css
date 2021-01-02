@@ -86,6 +86,41 @@ nav{
     background-color: rgba(255, 215, 0, 0.8);
 }
 
+/*about start*/
+
+.about{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+.about h1{
+    font-size: 48px;
+    color: gold;
+}
+
+.about p{
+    font-size: 24px;
+}
+
+.about li{
+    list-style: square;
+    font-size: 24px;
+}
+
+.bio{
+    animation: bio-load 1500ms ease-in;
+}
+
+.education{
+    animation: edu-load 1500ms ease-in;
+}
+
+.accomplishment{
+    animation: acc-load 1500ms ease-in;
+}
+
+/*about end */
+
 
 @media screen and (max-width: 768px) {
     .image{
@@ -109,7 +144,23 @@ nav{
         text-align: center;
     }
 
+    .about h1{
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .about p{
+        font-size: 18px;
+    }
+
+    .about li{
+        margin-bottom: 3px;
+        list-style: none;
+        font-size: 18px;
+    }
+
   }
+
 
 @keyframes background-load{
     0%{
@@ -144,6 +195,36 @@ nav{
 @keyframes intro-content-load{
     0%{
         transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes bio-load{
+    0%{
+        transform: translateX(100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes edu-load{
+    0%{
+        transform: translateX(-100%);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+@keyframes acc-load{
+    0%{
+        transform: translateY(-1000%);
     }
 
     100%{
