@@ -10,13 +10,37 @@ body{
     background: #3d3d3d;
 }
 
+/*Navigation starts*/
+
+nav{
+    animation: nav-load 1500ms ease-in;
+}
+
+.navbar-brand{
+    font-family: 'Berkshire Swash', cursive;
+    letter-spacing: 3px;
+    font-size: 24px;
+}
+
+.navbar-nav{
+    letter-spacing: 2px;
+    font-size: 18px;
+}
+
+.active{
+    font-family: 'Berkshire Swash', cursive;
+}
+
+/*Navigations ends*/
+
 .image {
     background-image: url("../img/background-2.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     opacity: 1.0;
-    height: 100vh;
+    min-height: 100vh;
+    max-height: 100%;
     animation: background-load 800ms ease-in;
 }
 
@@ -33,11 +57,11 @@ body{
     width: 250px;
     border-radius: 50%;
     border: 2px solid gold;
-    animation: img-load 1200ms ease-in;
+    animation: img-load 1500ms ease-in;
 }
 
 .intro-content{
-    animation: intro-content-load 2000ms ease-in;
+    animation: intro-content-load 1500ms ease-in;
 }
 
 .intro h1{
@@ -78,7 +102,7 @@ body{
     }
 
     .intro-content{
-        animation: intro-content-load 2000ms ease-in;
+        animation: intro-content-load 1500ms ease-in;
     }
 
     .intro-link{
@@ -97,9 +121,19 @@ body{
     }
 }
 
+@keyframes nav-load{
+    0%{
+        transform: translateY(10000%);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
+}
+
 @keyframes img-load{
     0%{
-        transform: translateY(-200%);
+        transform: translateX(200%);
     }
 
     100%{

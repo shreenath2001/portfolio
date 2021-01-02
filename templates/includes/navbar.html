@@ -1,0 +1,58 @@
+{% load static %}
+
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="{% url 'home' %}">PORTFOLIO</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a
+        {% if '/' == request.path %}
+            class="nav-link active"
+        {% else %}
+            class="nav-link"
+        {% endif %}
+        href="{% url 'home' %}">Home</a>
+      </li>
+      <li class="nav-item">
+        <a
+        {% if '/about' in request.path %}
+            class="nav-link active"
+        {% else %}
+            class="nav-link"
+        {% endif %}
+        href="{% url 'about' %}">About</a>
+      </li>
+      <li class="nav-item">
+        <a
+        {% if '/work' in request.path %}
+            class="nav-link active"
+        {% else %}
+            class="nav-link"
+        {% endif %}
+        href="{% url 'work' %}">Work</a>
+      </li>
+      <li class="nav-item">
+        <a
+        {% if '/projects' in request.path %}
+            class="nav-link active"
+        {% else %}
+            class="nav-link"
+        {% endif %}
+        href="{% url 'projects' %}">Projects</a>
+      </li>
+      <li class="nav-item">
+        <a
+        {% if '/contact' in request.path %}
+            class="nav-link active"
+        {% else %}
+            class="nav-link"
+        {% endif %}
+        href="{% url 'contact' %}">Contact</a>
+      </li>
+    </ul>
+  </div>
+</nav>

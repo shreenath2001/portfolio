@@ -9,3 +9,15 @@ def home(request):
         'intro':intro,
     }
     return render(request, 'jobs/home.html', data)
+
+def about(request):
+    return render(request, 'jobs/about.html')
+
+def work(request):
+    return render(request, 'jobs/work.html')
+
+def projects(request):
+    return render(request, 'jobs/projects.html')
+
+def contact(request):
+    return render(request, 'jobs/contact.html')
