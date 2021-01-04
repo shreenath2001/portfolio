@@ -91,11 +91,14 @@ nav{
 .about{
     margin-top: 5vh;
     margin-bottom: 5vh;
+    border: 2px solid gold;
+    animation: about 3000ms ease-in;
 }
 
 .about h1{
     font-size: 48px;
     color: gold;
+    font-family: 'Permanent Marker', cursive;
 }
 
 .about p{
@@ -103,16 +106,18 @@ nav{
 }
 
 .about li{
-    list-style: square;
+    list-style: none;
     font-size: 24px;
 }
 
 .bio{
     animation: bio-load 1500ms ease-in;
+    border-bottom: 2px solid gold;
 }
 
 .education{
     animation: edu-load 1500ms ease-in;
+    border-bottom: 2px solid gold;
 }
 
 .accomplishment{
@@ -120,6 +125,64 @@ nav{
 }
 
 /*about end */
+
+/* work start */
+
+.work{
+    margin-top: 5vh;
+    color: black;
+    margin-bottom: 5vh;
+    animation: work-load 1500ms ease-in;
+}
+
+.work h1{
+    color: white;
+    font-size: 48px;
+    margin-bottom: 3vh;
+}
+
+.work .card{
+    margin-top: 1vh;
+}
+
+.work-date{
+    text-align: left;
+}
+
+.card-text{
+    text-align: left;
+}
+
+/*work end */
+
+/*Project start*/
+
+
+
+/*Project end*/
+
+/*contact start*/
+
+.contact{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    animation: contact-load 1500ms ease-in;
+}
+
+.contact h1{
+    font-size: 48px;
+}
+
+/*contact end*/
+
+.submit-img{
+    animation-name: stretch; 
+    animation-duration: 2.0s; 
+    animation-timing-function: ease-out; 
+    animation-direction: alternate; 
+    animation-iteration-count: infinite; 
+    animation-play-state: running; 
+}
 
 
 @media screen and (max-width: 768px) {
@@ -155,8 +218,11 @@ nav{
 
     .about li{
         margin-bottom: 3px;
-        list-style: none;
         font-size: 18px;
+    }
+
+    .submit-img{
+        width: 65%;
     }
 
   }
@@ -173,13 +239,8 @@ nav{
 }
 
 @keyframes nav-load{
-    0%{
-        transform: translateY(10000%);
-    }
-
-    100%{
-        transform: translateY(0);
-    }
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
 @keyframes img-load{
@@ -200,6 +261,11 @@ nav{
     100%{
         transform: translateX(0);
     }
+}
+
+@keyframes about{
+    0% {opacity:0;}
+    100% {opacity:1;}
 }
 
 @keyframes bio-load{
@@ -231,3 +297,28 @@ nav{
         transform: translateX(0);
     }
 }
+
+@keyframes work-load{
+    0% {opacity:0;}
+    100% {opacity:1;}
+}
+
+@keyframes contact-load {
+    from {
+      transform: scale(0);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
+
+  @keyframes stretch { 
+    0% { 
+        transform: scale(.5); 
+        border-radius: 100%; 
+    } 
+
+    100% { 
+        transform: scale(2.0); 
+    } 
+} 

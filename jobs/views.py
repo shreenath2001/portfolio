@@ -1,5 +1,7 @@
-from django.shortcuts import render
+from django.shortcuts import redirect, render
 from .models import Intro
+from .models import Contact
+from django.contrib import messages
 
 # Create your views here.
 
@@ -19,5 +21,18 @@ def work(request):
 def projects(request):
     return render(request, 'jobs/projects.html')
 
+def submit(request):
+    return render(request, 'jobs/submit.html')
+
 def contact(request):
+    if request.method == 'POST':
+        name = request.POST['name']
+        subject = request.POST['subject']
+        email = request.POST['email']
+        message = request.POST['message']
+
+        contact = Contact(name = name, subject = subject, email = email, message = message)
+        contact.save()
+        messages.success(request, 'Form submission successful')
+        return redirect('submit')
     return render(request, 'jobs/contact.html')

@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}
+    | Submitted
+{% endblock %}
+
+{% block content %}
+
+    {% include 'includes/navbar.html' %}
+    <div class = "container mt-5">
+        <p style = "text-align:center;"><img src = "{% static 'img/thanks.jpg' %}" width = "350px" class = "submit-img" /><p>
+    </div>
+
+{% endblock %}

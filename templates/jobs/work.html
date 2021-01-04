@@ -8,4 +8,35 @@
 
 {% block content %}
     {% include 'includes/navbar.html' %}
+    <div class = "container work">
+        <h1>Work <span style = "color:gold;">Experience</span></h1>
+        <div class = "row">
+            <div class = "col-12 col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>Indian Institute of Technology, Kanpur</h3>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Intern</h5>
+                        <p class = "work-date">(April-2020 to June-2020)</p>
+                        <p class="card-text">This internship was based on Applied Machine Learning and Data Science which included Natural Language Processing, Computer Vision, and various other Deep Learning algorithms.</p>
+                        <a href="{% static 'img/IIT_Kanpur_Intern.pdf' %}" class="btn btn-primary" target = "_blank">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-12 col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h3>KoiReader Technologies</h3>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Python Development Intern</h5>
+                        <p class = "work-date">(November-2020 to Present)</p>
+                        <p class="card-text">In this internship we are working on Document Digitization using Artificial Intelligence and Machine Learning, like I worked on Image similarity in script, finding out font attributes from text image documents.</p>
+                        <a href="{% static 'img/KoiReader_Technologies_offer_letter.pdf' %}" class="btn btn-primary" target = "_blank">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}
