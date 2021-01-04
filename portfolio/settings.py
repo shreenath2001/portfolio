@@ -17,7 +17,7 @@ import dj_database_url
 #BASE_DIR = Path(__file__).resolve().parent.parent
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
-current_state = 'de'
+current_state = 'prod'
 
 
 # Quick-start development settings - unsuitable for production
@@ -139,6 +139,13 @@ STATICFILES_DIRS = [
 # media settings
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+# Email sending
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'bharadwajshreenath@gmail.com'
+EMAIL_HOST_PASSWORD = 'Shree2001'
+EMAIL_USE_TLS = True
 
 # Whitenoise settings
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'

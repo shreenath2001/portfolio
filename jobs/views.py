@@ -1,7 +1,8 @@
 from django.shortcuts import redirect, render
 from .models import Intro
 from .models import Contact
-from django.contrib import messages
+from django.core.mail import send_mail
+from django.contrib.auth.models import User
 
 # Create your views here.
 
@@ -32,7 +33,15 @@ def contact(request):
         message = request.POST['message']
 
         contact = Contact(name = name, subject = subject, email = email, message = message)
+        admin_info = User.objects.get(is_superuser=True)
+        admin_email = admin_info.email
+        send_mail(
+                subject,
+                message,
+                'bharadwajshreenath@gmail.com',
+                [admin_email],
+                fail_silently=False,
+            )
         contact.save()
-        messages.success(request, 'Form submission successful')
         return redirect('submit')
     return render(request, 'jobs/contact.html')
