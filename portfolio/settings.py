@@ -86,12 +86,12 @@ if(current_state == 'dev'):
             'ENGINE': 'django.db.backends.postgresql',
             'NAME': 'portfolio_db',
             'USER':'postgres',
-            'PASSWORD':'Shree2001',
+            'PASSWORD':'********',
             'HOST':'localhost',
         }
     }
 else:
-    DATABASES = {'default': dj_database_url.config(default='postgres://postgres:Shree2001@localhost/portfolio_db')}
+    DATABASES = {'default': dj_database_url.config(default='postgres://postgres:password@localhost/portfolio_db')}
 
 
 # Password validation
