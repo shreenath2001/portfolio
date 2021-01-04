@@ -5,10 +5,56 @@
     | Projects
 {% endblock %}
 
-    <div class = "container project">
-        
-    </div>
-
 {% block content %}
     {% include 'includes/navbar.html' %}
+    <div class = "container project mt-5">
+        <h1 style = "font-size:48px;">Recent <span style = "color:gold;">Works</span></h1>
+        <div class = "row">
+            <div class = "col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'img/text-summarizer.png' %}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Text Summarizer</h5>
+                        <a href="https://github.com/shreenath2001/text-summarizer" class="btn btn-primary btn-lg" target = "_blank">Github</a>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'img/plant-img.png' %}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Plant Image Classification</h5>
+                        <a href="https://github.com/shreenath2001/plant-image-classification" class="btn btn-primary btn-lg" target = "_blank">Github</a>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'img/digit-recognition.png' %}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Digit Recognition WebApp</h5>
+                        <a href="https://github.com/shreenath2001/digit-recognition-webapp" class="btn btn-primary btn-lg" target = "_blank">Github</a>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'img/carzone.png' %}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">CarZone</h5>
+                        <a href="https://github.com/shreenath2001/carzone" class="btn btn-primary btn-lg" target = "_blank">Github</a>
+                    </div>
+                </div>
+            </div>
+            <div class = "col-12 col-md-6 col-lg-4">
+                <div class="card">
+                    <img class="card-img-top" src="{% static 'img/sentiment-analysis.png' %}" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Sentiment Analysis of Twitter</h5>
+                        <a href="https://github.com/shreenath2001/Sentiment_Analysis_of_Twitter" class="btn btn-primary btn-lg" target = "_blank">Github</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 {% endblock %}

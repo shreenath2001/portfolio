@@ -157,7 +157,15 @@ nav{
 
 /*Project start*/
 
+.project{
+    margin-bottom: 5vh;
+    animation: project-load 1500ms ease-in;
+}
 
+.project .card{
+    margin-top: 1vh;
+    color: black;
+}
 
 /*Project end*/
 
@@ -302,6 +310,15 @@ nav{
     0% {opacity:0;}
     100% {opacity:1;}
 }
+
+@keyframes project-load {
+    from {
+      transform: scale(2);
+    }
+    to {
+      transform: scale(1);
+    }
+  }
 
 @keyframes contact-load {
     from {
